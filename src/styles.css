@@ -104,3 +104,11 @@ hr {
 .night {
   font-size: 20px;
 }
+
+.github {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: -220px;
+}
