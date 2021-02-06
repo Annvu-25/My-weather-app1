@@ -1,29 +1,32 @@
 .weather-app {
-  border: 0.8mm solid;
+  border: 0.5mm solid;
   color: #5a6275;
   padding: 22px;
   margin: 120px 250px 250px;
   max-width: 600px;
-  border-radius: 10px;
+  max-height: fit-content;
+  border-radius: 5px;
+  font-family: Times;
+  background-color: #fef5d2;
 }
 
 h1,
 h2 {
-  color: #3268d4;
+  color: #da5c2b;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500px;
+  font-family: Times;
+  font-weight: 300px;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 60px;
   margin: 40px;
-  font-weight: bold;
   margin-top: 40px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 75px;
   margin-top: 10px;
 }
 
@@ -32,13 +35,15 @@ ul {
   margin: 0 auto;
   text-align: right;
   list-style-type: none;
-  color: #5a6275;
+  color: #da5c2b;
   padding-left: 0px;
+  text-transform: uppercase;
 }
 
 .weather-img {
-  font-size: 160px;
-  color: #f7b832;
+  font-size: 200px;
+  color: #fce375;
+  margin-top: 50px;
 }
 
 small {
@@ -47,10 +52,12 @@ small {
 
 a {
   text-decoration: none;
+  color: #da5c2b;
 }
 
 .row {
-  color: #5a6275;
+  color: #da5c2b;
+  font-size: 16px;
 }
 
 .col-3 {
@@ -65,19 +72,19 @@ a {
 
 .time {
   text-align: left;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 hr {
-  color: black;
+  color: #da5c2b;
 }
 
 .btn-primary {
   font-weight: lighter;
   margin-right: 5px;
-  border-color: #3268d4;
-  background-color: #3268d4;
-  font-size: 1.05rem;
+  border-color: #da5c2b;
+  background-color: #da5c2b;
+  font-size: 1.15rem;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -93,16 +100,27 @@ hr {
 
 .degree {
   margin-left: 78px;
+  font-size: 100px;
+  font-weight: 100px;
+}
+
+.celcius-link {
+  color: #da5c2b;
 }
 
 .weather-icons {
   text-align: center;
   margin: 10px 20px 0px 14px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .night {
   font-size: 20px;
+  color: #da5c2b;
+}
+
+li {
+  color: #da5c2b;
 }
 
 .github {
@@ -111,4 +129,5 @@ hr {
   text-align: center;
   position: relative;
   top: -220px;
+  color: #da5c2b;
 }
