@@ -1,13 +1,17 @@
 .weather-app {
-  border: 0.5mm solid;
-  color: #5a6275;
-  padding: 22px;
-  margin: 120px 250px 250px;
-  max-width: 600px;
+  border: 0.5mm solid #f3f2f1;
+  border-radius: 10px;
+  box-shadow: 1px 7px 10px 5px rgba(100, 50, 50, 0.2);
+  padding: 5px 40px;
+  margin: 40px auto 30px;
+  max-width: 550px;
   max-height: fit-content;
-  border-radius: 5px;
   font-family: Times;
-  background-color: #fef5d2;
+  background: linear-gradient(#eff3f9, white);
+}
+
+body {
+  background: linear-gradient(20deg, #f3f2f1, #d1cecb);
 }
 
 h1,
@@ -20,9 +24,8 @@ h2 {
 }
 
 h1 {
-  font-size: 60px;
-  margin: 40px;
-  margin-top: 40px;
+  font-size: 50px;
+  margin: 40px auto 10px;
 }
 
 h2 {
@@ -31,28 +34,51 @@ h2 {
 }
 
 ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #da5c2b;
   display: block;
   margin: 0 auto;
-  text-align: right;
-  list-style-type: none;
-  color: #da5c2b;
-  padding-left: 0px;
-  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 22px;
+}
+
+.time {
+  font-size: 30px;
+  position: relative;
+  left: 50px;
+}
+
+.night {
+  position: relative;
+  right: 80px;
+  bottom: 36px;
+}
+
+.all {
+  position: relative;
+  bottom: 52px;
+  right: 80px;
+}
+
+.separation {
+  font-size: 40px;
+  font-weight: 100px;
+  opacity: 0.6;
+  position: relative;
+  bottom: 80px;
+  left: 16px;
 }
 
 .weather-img {
-  font-size: 200px;
-  color: #fce375;
-  margin-top: 50px;
-}
-
-small {
-  font-size: 22px;
-}
-
-a {
-  text-decoration: none;
-  color: #da5c2b;
+  font-size: 300px;
+  color: #fce168;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 3;
+  margin: 0px 50px 10px 20px;
 }
 
 .row {
@@ -65,14 +91,14 @@ a {
 }
 
 .form-control {
-  margin: 15px 5px 0px;
   display: inline-block;
-  width: 79%;
-}
-
-.time {
-  text-align: left;
-  font-size: 20px;
+  margin: 20px 20px 0px 5px;
+  width: 82%;
+  font-size: larger;
+  font-family: Times;
+  font-style: italic;
+  position: relative;
+  right: 20px;
 }
 
 hr {
@@ -88,46 +114,53 @@ hr {
   display: block;
   margin: 0 auto;
   position: relative;
-  top: -106px;
-  right: -235px;
+  top: -58px;
+  right: -205px;
+}
+
+.btn-primary:hover {
+  color: #f1f5f9;
+  background: #333131;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 
 .units {
+  font-size: 22px;
+  color: #da5c2b;
   position: relative;
-  top: -42px;
+  top: -50px;
   left: -18px;
 }
 
+a {
+  text-decoration: none;
+  color: #da5c2b;
+}
+
+a:hover {
+  color: #333131;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
 .degree {
-  margin-left: 78px;
+  margin-left: 80px;
   font-size: 100px;
   font-weight: 100px;
 }
 
-.celcius-link {
-  color: #da5c2b;
-}
-
 .weather-icons {
   text-align: center;
-  margin: 10px 20px 0px 14px;
+  margin: 10px 20px;
   font-size: 25px;
 }
 
-.night {
-  font-size: 20px;
-  color: #da5c2b;
-}
-
-li {
-  color: #da5c2b;
-}
-
-.github {
+.my-link {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   text-align: center;
-  position: relative;
-  top: -220px;
   color: #da5c2b;
 }
