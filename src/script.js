@@ -28,22 +28,18 @@ let days = [
 dateElement.innerHTML = `${days[day]}`;
 
 function showTemperature(response) {
+  console.log.data;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
-  response.data.main.temp
-  );
+  response.data.main.temp)
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
-
-function showIcon(response) {
-let iconElement = document.querySelector("#icon");
-iconElement.setAttribute("img", ) = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
-}
-
 
 function search(city) {
   let apiKey = "33c546775229a1fee66d0c638aa516ca";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature, showIcon);
+  axios.get(apiUrl).then(showTemperature);
 }
 
 function handleSubmit(event) {

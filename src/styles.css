@@ -72,13 +72,13 @@ ul {
   left: 16px;
 }
 
-.weather-img {
+img {
   font-size: 300px;
   color: #fce168;
   opacity: 0.5;
   position: absolute;
   z-index: 3;
-  margin: 0px 50px 10px 20px;
+  margin: 0 auto;
 }
 
 .row {
