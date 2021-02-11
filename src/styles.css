@@ -72,13 +72,13 @@ ul {
   left: 16px;
 }
 
-img {
-  font-size: 300px;
+#icon {
   color: #fce168;
   opacity: 0.5;
   position: absolute;
   z-index: 3;
   margin: 0 auto;
+  font-size: 300px;
 }
 
 .row {
@@ -120,7 +120,7 @@ hr {
 
 .btn-primary:hover {
   color: #f1f5f9;
-  background: #333131;
+  background: #da5c2b;
   opacity: 0.5;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -140,7 +140,7 @@ a {
 }
 
 a:hover {
-  color: #333131;
+  color: #da5c2b;
   opacity: 0.5;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -162,5 +162,16 @@ a:hover {
   display: block;
   margin: 0 auto 25px;
   text-align: center;
-  color: #da5c2b;
+  color: #593663;
+}
+
+.github {
+  color: #593663;
+  font-weight: 600;
+}
+
+.github:hover {
+  color: #593663;
+  opacity: 0.8;
+  text-decoration: underline;
 }
